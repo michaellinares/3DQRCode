@@ -5,9 +5,7 @@ count=0;
 
 [m,~] = size(QRMTX);
 ARRAY = zeros(m,m,m); % ARRAY's size is based on the pixel dimension of the qr image
-IdxVec=IdxVec/2
-QSdim=QSdim*2
-numberofcols = length(IdxVec)*2 % refeeres to the number of columns and rows in qr code
+numberofcols = length(IdxVec) % refeeres to the number of columns and rows in qr code
 cellsize = IdxVec(1);
 ZPOSMTX = nan(numberofcols,numberofcols); % stores the z coordinate of the bottom of each cell cube in same row/col that the cell cube is stored
 
